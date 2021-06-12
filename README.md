@@ -38,14 +38,14 @@ Prerequisites
 
 Clone and Deploy
 
-  git clone https://github.com/choudhurysr/serverless-nodejs-rest-api.git
-  npm install
-  serverless deploy
+    git clone https://github.com/choudhurysr/serverless-nodejs-rest-api.git
+    npm install
+    serverless deploy
 
 Run and Test
 
-  Note endpoints from serverless deploy output.
-  Run API from Postman
-  Check AWS CloudWatch Logs
-  Redeploy specific function: serverless deploy --function <function-name>
-  Check AWS CloudWatch Logs
+    Note endpoints from serverless deploy output.
+    Run API from Postman.
+    Check AWS CloudWatch Logs.
+    Redeploy specific function: serverless deploy --function <function-name>.
+    Check AWS CloudWatch Logs
