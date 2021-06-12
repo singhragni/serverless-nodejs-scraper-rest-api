@@ -3,7 +3,7 @@ const request = require('request');
 
 module.exports = {
     scrapingData: (req,res) => {
-        //res.setHeader('Content-Type', 'application/json');
+        res.setHeader('Content-Type', 'application/json');
         url = "https://www.google.com/";
         request(url,function(error,response,responseHtml){
             resObj = {},
