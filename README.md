@@ -18,7 +18,6 @@ Serverless Application Model (SAM)/CloudFormation template.
 Helper scripts to configure, deploy, and manage your application.
 
 
-
 What is Serverless?
 
 A method of providing backend services on an as-used basis
