@@ -13,6 +13,7 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 # Serverless Nodejs Project for building Scraping Rest API
     Lambda function.
     Express application.
+    API Gateway.
     Serverless Application Model (SAM)/CloudFormation template.
     Helper scripts to configure, deploy, and manage your application.
 
