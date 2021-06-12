@@ -41,7 +41,7 @@ Prerequisites
 
 Clone and Deploy
 
-    git clone https://github.com/choudhurysr/serverless-nodejs-rest-api.git
+    git clone https://github.com/singhragni/serverless-nodejs-scraper-rest-api.git
     npm install
     serverless deploy
 
