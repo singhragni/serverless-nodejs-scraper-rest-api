@@ -52,3 +52,15 @@ Run and Test
     Check AWS CloudWatch Logs.
     Redeploy specific function: serverless deploy --function <function-name>.
     Check AWS CloudWatch Logs
+    
+    
+Enabling API caching
+
+    Go to the API Gateway console.
+    Choose the API.
+    Choose Stages.
+    In the Stages list for the API, choose the stage.
+    Choose the Settings tab.
+    Choose Enable API cache.
+    Wait for the cache creation to complete.
+
