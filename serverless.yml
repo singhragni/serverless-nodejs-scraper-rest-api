@@ -9,5 +9,20 @@ provider:
   lambdaHashingVersion: 20201221
 
 functions:
-  hello:
-    handler: handler.hello
+  getKey:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
+  setKey:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: post
+          cors: true
+
+
+
