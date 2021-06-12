@@ -12,8 +12,12 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 
 # Serverless Nodejs Project for building Scraping Rest API
 
-Contains a set of Nodejs Lambda Functions
-serverless.yml contains specification for lambdas
+Lambda function
+Express application
+Serverless Application Model (SAM)/CloudFormation template
+Helper scripts to configure, deploy, and manage your application
+
+
 
 What is Serverless?
 
