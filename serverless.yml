@@ -8,21 +8,33 @@ provider:
   runtime: nodejs12.x
   lambdaHashingVersion: 20201221
 
+# custom:
+#   warmup:
+#       enabled: true
+#       events:
+#         - schedule: cron(0/5 8-17 ? * SAT-SUN *)
+
 functions:
   getKey:
+    warmup: true
     handler: handler.handler
     events:
+      - schedule: cron(0/5 8-17 ? * SAT-SUN *)
       - http:
           path: /
           method: get
           cors: true
   setKey:
+    warmup: true
     handler: handler.handler
     events:
+      - schedule: cron(0/5 8-17 ? * SAT-SUN *)
       - http:
           path: /
           method: post
           cors: true
+plugins:
+  - serverless-plugin-warmup
 
 
 

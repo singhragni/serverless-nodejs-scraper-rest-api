@@ -33,6 +33,7 @@ Prerequisites
     Check npm version: npm -v
     Install serverless using: npm install serverless -g Check version: serverless -v
     Install npm i aws-serverless-express
+    Install npm i serverless-plugin-warmup for Stop Lambda Cold Starts.
     Setup AWS Account
     Setup AWS IAM User with Admin privileges
     Run aws configure to update AWS IAM User access_key, secret_key, region
