@@ -2,7 +2,7 @@ const cheerio = require('cheerio');
 const request = require('request');
 
 module.exports = {
-    scrapingData: (req,res) => {
+    scrapingData: async (req,res) => {
         res.setHeader('Content-Type', 'application/json');
        // url = "https://www.google.com/";
         request(req.body.url,function(error,response,responseHtml){

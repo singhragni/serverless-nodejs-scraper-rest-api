@@ -11,18 +11,21 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 -->
 
 # Serverless Nodejs Project for building Scraping Rest API
+    Lambda function.
+    Express application.
+    API Gateway.
+    Serverless Application Model (SAM)/CloudFormation template.
+    Helper scripts to configure, deploy, and manage your application.
 
-Contains a set of Nodejs Lambda Functions
-serverless.yml contains specification for lambdas
 
 What is Serverless?
 
-A method of providing backend services on an as-used basis
-Write and deploy code without worrying about the underlying infrastructure
-Physical servers are used but developers do not need to be aware of them
-Charges are based on usage
-Do not have to reserve and pay for a fixed amount of bandwidth or number of servers
-Services auto-scale based on load
+    A method of providing backend services on an as-used basis
+    Write and deploy code without worrying about the underlying infrastructure
+    Physical servers are used but developers do not need to be aware of them
+    Charges are based on usage
+    Do not have to reserve and pay for a fixed amount of bandwidth or number of servers
+    Services auto-scale based on load
 
 Prerequisites
 
@@ -38,7 +41,7 @@ Prerequisites
 
 Clone and Deploy
 
-    git clone https://github.com/choudhurysr/serverless-nodejs-rest-api.git
+    git clone https://github.com/singhragni/serverless-nodejs-scraper-rest-api.git
     npm install
     serverless deploy
 
@@ -49,3 +52,15 @@ Run and Test
     Check AWS CloudWatch Logs.
     Redeploy specific function: serverless deploy --function <function-name>.
     Check AWS CloudWatch Logs
+    
+    
+Enabling API caching
+
+    Go to the API Gateway console.
+    Choose the API.
+    Choose Stages.
+    In the Stages list for the API, choose the stage.
+    Choose the Settings tab.
+    Choose Enable API cache.
+    Wait for the cache creation to complete.
+
