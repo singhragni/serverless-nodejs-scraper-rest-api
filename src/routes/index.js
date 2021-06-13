@@ -10,4 +10,8 @@ routers.get('/', function(req, res) {
 
 routers.post("/",scrapingData);
 
+routers.post('/', function(req, res) {
+    res.status(200).json()
+  });
+
 module.exports = routers;
