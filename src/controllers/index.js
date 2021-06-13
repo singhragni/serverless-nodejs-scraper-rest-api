@@ -2,11 +2,16 @@ const cheerio = require('cheerio');
 const request = require('request');
 
 module.exports = {
-    scrapingData: async (req,res) => {
+    scrapingData: (req,res) => {
         res.setHeader('Content-Type', 'application/json');
-       // url = "https://www.google.com/";
+        //url = "https://www.google.com/";
         request(req.body.url,function(error,response,responseHtml){
-            resObj = {},
+            resObj = {};
+             //if there was an error
+            if (error) {
+                res.end(JSON.stringify({error: 'There was an error of some kind'}));
+                return;
+            }
             //set a reference to the document that came back
             $ = cheerio.load(responseHtml),
             //create a reference to the meta elements
@@ -50,11 +55,7 @@ module.exports = {
             }
             //send the response
             res.end(JSON.stringify(resObj));
-                //if there was an error
-            if (error) {
-                res.end(JSON.stringify({error: 'There was an error of some kind'}));
-                return;
-            }
+           
         })
     },
 }
